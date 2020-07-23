@@ -1,0 +1,12 @@
+package com.info.Exception;
+
+import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.ResponseStatus;
+
+@ResponseStatus(code = HttpStatus.BAD_REQUEST)
+public class ProjectNotfoundException extends RuntimeException{
+
+	public ProjectNotfoundException(String message) {
+		super(message);
+	}
+}
